@@ -1,0 +1,14 @@
+$bgcolor: #c01b1b;
+$primary-textColor: #016109;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: $primary-textColor;
+    background-color: $bgcolor;
+}
