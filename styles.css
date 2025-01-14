@@ -1,10 +1,77 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
+/* body {
   color: #016109;
   background-color: #c01b1b;
-}/*# sourceMappingURL=styles.css.map */
+}# sourceMappingURL=styles.css.map */
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  line-break: normal;
+  grid-template-areas:
+                        "nav"
+                        "main"
+                        "side"
+                        "footer";
+}
+
+.box p {
+  margin-bottom: 0.7rem;
+}
+
+.box p:last-child {
+  margin-bottom: 0;
+}
+
+.box {
+  background-color:burlywood;
+  padding: 2%;
+}
+
+.boxNav {
+  grid-area: nav;
+  background-color: brown;
+}
+
+.boxMain {
+  grid-area: main;
+  background-color: aqua;
+}
+
+.boxSide {
+  grid-area: side;
+  background-color:blueviolet;
+}
+
+.boxFooter {
+  grid-area: footer;
+  background-color:cadetblue;
+}
+/* Tablet & Desktop View */
+@media only screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: 75% auto;
+    grid-template-areas:
+                        "nav nav"
+                        "main side"
+                        "footer footer";
+  }
+}
+/* END Tablet & Desktop View */
+
+
+/* @media only screen and (min-width: 960px) {
+  .container {
+    max-width: 100%;
+    grid-template-columns: 75% auto;
+    grid-template-areas:
+                        "nav nav"
+                        "main side"
+                        "footer footer";
+  }
+} */
