@@ -1,0 +1,50 @@
+*, *::before, *::after 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+section, article, aside, footer, nav, main, header
+    display: block
+
+.container
+    display: grid
+    grid-template-rows: auto
+    line-break: normal
+    grid-template-areas: "boxNav" "boxMain" "boxSide" "boxFooter"
+
+.box
+    p
+        margin-bottom: 0.7rem
+
+.box
+    p:last-child
+        margin-bottom: 0
+
+.box
+    background-color: burlywood
+    padding: 2%
+
+.boxNav
+    grid-area: boxNav
+    background-color: brown
+
+.boxMain
+    grid-area: boxMain
+    background-color: aqua
+
+.boxSide
+    grid-area: boxSide
+    background-color: blueviolet
+
+.boxFooter
+    grid-area: boxFooter
+    background-color: cadetblue
+
+    /**
+     * Start Desktop and Tablet view
+     */
+
+@media only screen and (min-width: 600px)
+    .container
+        grid-template-columns: 75% auto
+        grid-template-areas: "boxNav boxNav" "boxMain boxSide" "booxFooter boxFooter"
