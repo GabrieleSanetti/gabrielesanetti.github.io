@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>GS | Gabriele Sanetti | Web Developer</title>
 </head>
-<body>
+<body class="h-screen bg-myblue-200">
     <header class="bg-myblue-300 h-[15dvh]">
         <nav class="h-full z-[50] w-[80%] mx-auto grid grid-flow-col md:grid-cols-3 items-center justify-between text-center">
             <button class="md:hidden" id="button">
                 <i id="icon" class="cursor-pointer fa-solid fa-bars text-3xl text-myblue-400"></i>
             </button>
-            <div class="nav-links md:static absolute bg-myblue-200 md:bg-transparent w-full top-[-20%] z-[-1] md:z-auto left-0 transition-all duration-600 ease-in-out">
-                <ul class="py-8 md:py-0 text-2xl text-myblue-400 grid md:grid-cols-3 md:gap-3 *:min-md:hover:text-myblue-100 *:min-md:hover:bg-myblue-400 *:transition-colors *:duration-300 *:rounded-md *:py-3">
+            <div class="nav-links md:static absolute bg-myblue-300 md:bg-transparent w-full top-[-20%] z-[-1] md:z-auto left-0 transition-all duration-600 ease-in-out">
+                <ul class="py-3 md:py-0 text-2xl text-myblue-400 grid md:grid-cols-3 md:gap-3 *:min-md:hover:text-myblue-100 *:min-md:hover:bg-myblue-400 *:transition-colors *:duration-300 *:md:rounded-md *:py-3">
                     <li class=""><a href="">Home</a></li>
                     <li class=""><a href="">Resume</a></li>
                     <li class=""><a href="">Contatti</a></li>
@@ -29,6 +29,32 @@
             </div>
         </nav>
     </header>
+
+    <main class="w-[80%] mx-auto my-12">
+        <div class="grid grid-cols-2 items-center justify-items-end">
+            <h2 class="bg-amber-400 text-4xl md:text-8xl">Gabriele<br />Sanetti</h2>
+            <img class="clip-blob w-sm" src="assets/img/gabriele-sanetti.webp" alt="">
+        </div>
+    </main>
+
+    <footer class="bg-myblue-400 grid grid-cols-1 sticky top-full">
+        <div class="w-[80%] grid grid-cols-4 h-fit py-10 *:text-myblue-100 mx-auto">
+            <h2 class="col-span-2 text-4xl md:text-5xl text-myblue-400 relative">G<span class="absolute top-4 md:pl-1">S</span></h2>
+            <div class="text-lg md:text-3xl">
+                <ul class="*:mb-3 *:last:mb-0 *:md:mb-7 *:md:last:mb-0">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Contatti</a></li>
+                </ul>
+            </div>
+            <div class="text-lg md:text-3xl">
+                <ul class="*:mb-3 *:last:mb-0 *:md:mb-7 *:md:last:mb-0">
+                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script>
         const navLinks = document.querySelector('.nav-links')
         const iconButton = document.getElementById('button');
