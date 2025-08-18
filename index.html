@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-myblue-300 h-[15dvh]">
+        <nav class="h-full z-[50] w-[80%] mx-auto grid grid-flow-col md:grid-cols-3 items-center justify-between text-center">
+            <button class="md:hidden" id="button">
+                <i id="icon" class="cursor-pointer fa-solid fa-bars text-3xl text-myblue-400"></i>
+            </button>
+            <div class="nav-links md:static absolute bg-myblue-200 md:bg-transparent w-full top-[-20%] z-[-1] md:z-auto left-0 transition-all duration-600 ease-in-out">
+                <ul class="py-8 md:py-0 text-2xl text-myblue-400 grid md:grid-cols-3 md:gap-3 *:min-md:hover:text-myblue-100 *:min-md:hover:bg-myblue-400 *:transition-colors *:duration-300 *:rounded-md *:py-3">
+                    <li class=""><a href="">Home</a></li>
+                    <li class=""><a href="">Resume</a></li>
+                    <li class=""><a href="">Contatti</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <h1 class="text-5xl md:text-6xl text-myblue-400 relative">G<span class="absolute top-4 md:pl-1">S</span></h1>
+            </div>
+            <div class="grid grid-cols-2 justify-self-end-safe gap-2.5 md:gap-5 *:text-myblue-400 *:hover:text-myblue-100 *:text-3xl *:md:text-4xl *:transition-colors *:duration-300">
+                <a class="" target="_blank" href="https://www.linkedin.com/in/gabrielesanetti/"><i class="fa-brands fa-square-linkedin"></i></a>
+                <a class="" target="_blank" href="https://github.com/GabrieleSanetti"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </nav>
+    </header>
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        const iconButton = document.getElementById('button');
+        iconButton.addEventListener('click', () => {
+            const iconElement = document.getElementById('icon');
+            iconElement.classList.toggle('fa-bars');
+            iconElement.classList.toggle('fa-xmark');
+            navLinks.classList.toggle('top-[13dvh]');
+        });
+    </script>
+</body>
+</html>
