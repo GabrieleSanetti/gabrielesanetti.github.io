@@ -10,12 +10,12 @@
 <body class="">
     <div class="bg-myblue-200 min-h-dvh">
         <header class="bg-myblue-300 h-[15dvh] w-full grid md:justify-items-center-safe">
-            <nav class="h-full z-[50] md:w-[80%] grid grid-cols-3 justify-items-center-safe text-center **:content-center">
+            <nav class="h-full z-10 md:w-[80%] grid grid-cols-3 justify-items-center-safe text-center **:content-center">
                 <button class="md:hidden" id="button">
                     <i id="icon" class="cursor-pointer fa-solid fa-bars text-3xl text-myblue-400"></i>
                 </button>
-                <div class="nav-links md:static absolute bg-myblue-400 w-full max-sm:py-3 top-[-100%] z-[-1] left-0 transition-all duration-600 ease-in-out">
-                    <ul class="*:md:px-5 text-2xl text-myblue-400 grid md:grid-cols-3 *:min-md:hover:text-myblue-100 *:min-md:hover:bg-myblue-400 *:transition-colors *:duration-300 *:md:rounded-md *:max-sm:py-4">
+                <div class="nav-links md:static absolute bg-myblue-300 w-full max-sm:py-3 top-[-100%] z-[-1] left-0 transition-all duration-600 ease-in-out">
+                    <ul class="*:md:px-5 text-2xl text-myblue-400 grid md:grid-cols-3 *:min-md:hover:text-myblue-100 *:min-md:hover:bg-myblue-400 *:transition-colors *:duration-300 *:md:rounded-md *:py-3">
                         <li class=""><a href="">Home</a></li>
                         <li class=""><a href="">Resume</a></li>
                         <li class=""><a href="">Contatti</a></li>
@@ -56,69 +56,106 @@
                 </div>
             </nav>
         </header>
-
-        <main class="w-[80%] h-auto mx-auto my-6">
+        <!--///INIZIO CONTENUTO/// -->
+        <main class="w-[80%] h-full mx-auto py-6">
             <div class="grid grid-cols-2 justify-items-center-safe *:content-center-safe max-sm:gap-x-12 mb-6">
-                <h2 class="font-lexend font-light text-5xl md:text-9xl justify-self-end-safe">Gabriele<br />Sanetti</h2>
+                <h2 class="font-lexend font-light text-5xl md:text-9xl text-myblue-400 justify-self-end-safe">Gabriele<br />Sanetti</h2>
                 <img class="clip-blob w-80" src="assets/img/gabriele-sanetti.webp" alt="">
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="grid max-sm:grid-cols-1 grid-cols-2">
                 <div class="grid auto-rows-auto *:mb-5">
-                    <h3 class="font-lex font-normal text-myblue-400 text-xl md:text-3xl mb-5 md:mb-7">Formazione</h3>
-                    <ul>
+                    <div class="grid grid-cols-2 justify-self-start gap-2 content-center-safe">
+                        <h3 class="font-lex font-normal text-myblue-400 text-2xl md:text-3xl mb-5 md:mb-7 w-fit">Formazione</h3>
+                        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-book text-myblue-400 w-7 md:w-9 pt-0.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
+                    </div>
+                    <ul class="">
                         <li class="font-lex font-light text-myblue-400 text-lg md:text-2xl">Università degli Studi della Tuscia</li>
-                        <li class="font-lex font-extralight text-myblue-400 text-base">Comunicazione, Tecnologie e Culture</li>
-                        <li class="font-lex font-extralight text-myblue-400 text-sm">Viterbo</li>
-                        <li class="font-lex font-extralight italic text-shadow-mybrown-300 text-sm">Sett 2018 - Gen 2020</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-base md:text-xl">Comunicazione, Tecnologie e Culture</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-sm md:text-xl">Viterbo</li>
+                        <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-lg">Sett 2018 - Gen 2020</li>
                     </ul>
                     <ul>
                         <li class="font-lex font-light text-myblue-400 text-lg md:text-2xl">Langports English Language College</li>
-                        <li class="font-lex font-extralight text-myblue-400 text-base">General English</li>
-                        <li class="font-lex font-extralight text-myblue-400 text-sm">Brisbane, QLD, Australia</li>
-                        <li class="font-lex font-extralight italic text-shadow-mybrown-300 text-sm">Gen 2020 - Mar 2020</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-base md:text-xl">General English</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-sm md:text-xl">Brisbane, QLD, Australia</li>
+                        <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-lg">Gen 2020 - Mar 2020</li>
                     </ul>
                     <ul>
                         <li class="font-lex font-light text-myblue-400 text-lg md:text-2xl">Accademia Anja</li>
-                        <li class="font-lex font-extralight text-myblue-400 text-base">Webmaster</li>
-                        <li class="font-lex font-extralight text-myblue-400 text-sm">Roma</li>
-                        <li class="font-lex font-extralight italic text-shadow-mybrown-300 text-sm">Ott 2012 - Giu 2013</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-base md:text-xl">Webmaster</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-sm md:text-xl">Roma</li>
+                        <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-lg">Ott 2012 - Giu 2013</li>
                     </ul>
                     <ul>
                         <li class="font-lex font-light text-myblue-400 text-lg md:text-2xl">IISS Francesco Orioli</li>
-                        <li class="font-lex font-extralight text-myblue-400 text-base">Economia Aziendale e Informatica</li>
-                        <li class="font-lex font-extralight text-myblue-400 text-sm">Viterbo</li>
-                        <li class="font-lex font-extralight italic text-shadow-mybrown-300 text-sm">Sett 2007 - Mag 2012</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-base md:text-xl">Economia Aziendale e Informatica</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-sm md:text-xl">Viterbo</li>
+                        <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-lg">Sett 2007 - Mag 2012</li>
                     </ul>
                     <!-- ///FINE FORMAZIONE/// -->
-                    <h3 class="mt-8">Certificazioni</h3>
-                    <ul>
-                        <li>Università degli Studi della Tuscia</li>
-                        <li>Comunicazione, Tecnologie e Culture</li>
-                        <li>Viterbo</li>
-                        <li>Sett 2018 - Gen 2020</li>
+                    <hr class="text-myblue-400 w-[90%] md:w-[75%]">
+                    <!-- ///INIZIO CERITIFICAZIONI/// -->
+                    <div class="grid grid-cols-2 justify-self-start gap-2 content-center-safe mt-10">
+                        <h3 class="font-lex font-normal text-myblue-400 text-2xl md:text-3xl mb-5 md:mb-7 w-fit">Certificazioni</h3>
+                        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check text-myblue-400 w-7 md:w-9 pt-0.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+                    </div>
+                    <ul class="">
+                        <li class="font-lex font-light text-myblue-400 text-lg md:text-2xl">Università degli Studi della Tuscia</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-base md:text-xl">Comunicazione, Tecnologie e Culture</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-sm md:text-xl">Viterbo</li>
+                        <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-lg">Sett 2018 - Gen 2020</li>
                     </ul>
                 </div>
+                <!-- ////////// -->
                 <!-- ///FINE COLONNA SINISTRA/// -->
-                <div class="grid auto-rows-auto">
-                    <h3>Certificaioni</h3>
-                    <ul>
-                        <li>Università degli Studi della Tuscia</li>
-                        <li>Comunicazione, Tecnologie e Culture</li>
-                        <li>Viterbo</li>
-                        <li>Sett 2018 - Gen 2020</li>
+                <!-- ////////// -->
+                <div class="grid auto-rows-auto *:mb-5">
+                    <div class="grid grid-cols-2 justify-self-start gap-2 content-center-safe">
+                        <h3 class="font-lex font-normal text-myblue-400 text-2xl md:text-3xl mb-5 md:mb-7 w-fit">Formazione</h3>
+                        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-book text-myblue-400 w-7 md:w-9 pt-0.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
+                    </div>
+                    <ul class="">
+                        <li class="font-lex font-light text-myblue-400 text-lg md:text-2xl">Università degli Studi della Tuscia</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-base md:text-xl">Comunicazione, Tecnologie e Culture</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-sm md:text-xl">Viterbo</li>
+                        <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-lg">Sett 2018 - Gen 2020</li>
                     </ul>
-                    <!-- ///FINE ESPERIENZE LAVORATIVE/// -->
-                    <h3>Certificaioni</h3>
                     <ul>
-                        <li>Università degli Studi della Tuscia</li>
-                        <li>Comunicazione, Tecnologie e Culture</li>
-                        <li>Viterbo</li>
-                        <li>Sett 2018 - Gen 2020</li>
+                        <li class="font-lex font-light text-myblue-400 text-lg md:text-2xl">Langports English Language College</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-base md:text-xl">General English</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-sm md:text-xl">Brisbane, QLD, Australia</li>
+                        <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-lg">Gen 2020 - Mar 2020</li>
                     </ul>
-                </div>
+                    <ul>
+                        <li class="font-lex font-light text-myblue-400 text-lg md:text-2xl">Accademia Anja</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-base md:text-xl">Webmaster</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-sm md:text-xl">Roma</li>
+                        <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-lg">Ott 2012 - Giu 2013</li>
+                    </ul>
+                    <ul>
+                        <li class="font-lex font-light text-myblue-400 text-lg md:text-2xl">IISS Francesco Orioli</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-base md:text-xl">Economia Aziendale e Informatica</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-sm md:text-xl">Viterbo</li>
+                        <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-lg">Sett 2007 - Mag 2012</li>
+                    </ul>
+                    <!-- ///FINE FORMAZIONE/// -->
+                    <hr class="text-myblue-400 w-[90%] md:w-[75%]">
+
+                    <div class="grid grid-cols-2 justify-self-start gap-2 content-center-safe mt-10">
+                        <h3 class="font-lex font-normal text-myblue-400 text-2xl md:text-3xl mb-5 md:mb-7 w-fit">Certificazioni</h3>
+                        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check text-myblue-400 w-7 md:w-9 pt-0.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+                    </div>
+                    <ul class="">
+                        <li class="font-lex font-light text-myblue-400 text-lg md:text-2xl">Università degli Studi della Tuscia</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-base md:text-xl">Comunicazione, Tecnologie e Culture</li>
+                        <li class="font-lex font-extralight text-myblue-400 text-sm md:text-xl">Viterbo</li>
+                        <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-lg">Sett 2018 - Gen 2020</li>
+                    </ul>
+                </div> 
             </div>
         </main>
+        <!--///FINE CONTENUTO/// -->
 
         <footer class="bg-myblue-400 grid grid-cols-1 sticky top-full h-fit">
             <div class="w-[80%] grid max-sm:grid-rows-3 md:grid-cols-4 max-sm:py-6 md:py-16 *:text-myblue-100 mx-auto justify-items-end">
