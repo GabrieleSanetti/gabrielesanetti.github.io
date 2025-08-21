@@ -1,16 +1,65 @@
 @import "tailwindcss";
 
 @theme {
-    --color-myblue-100: #DCE6EF; /* Blue shades */
+    /* Width Custom */
+    --width-cont: 80%;
+
+    /* Blue shades */
+    --color-myblue-100: #DCE6EF;
     --color-myblue-200: #BED1E2;
     --color-myblue-300: #79A1C3;
     --color-myblue-400: #2F4F6A;
-    --color-mybrown-100: #E3D0C0; /* Brown shades*/
+    
+    /* Brown shades*/
+    --color-mybrown-100: #E3D0C0;
     --color-mybrown-200: #CBA98B;
     --color-mybrown-300: #6A4B2F;
 
     /* Font Family Lexend */
     --font-lex: "Lexend", sans-serif; 
+
+    /* Animazione Scroll Infinito */
+    --animate-horiz: horiz 25s linear infinite;
+    --animate-horiz2: horiz2 25s linear infinite;
+
+    @keyframes horiz {
+        0% {
+            transform: translatex(0%);
+        }
+        100% {
+            transform: translatex(-100%);
+        }
+    }
+
+    @keyframes horiz2 {
+        0% {
+            transform: translatex(100%);
+        }
+        100% {
+            transform: translatex(0%);
+        }
+    }
+
+    --animate-horiz-reverse: horiz-reverse 25s linear infinite;
+    --animate-horiz-reverse2: horiz-reverse2 25s linear infinite;
+
+    @keyframes horiz-reverse {
+        0% {
+            transform: translatex(-100%);
+        }
+        100% {
+            transform: translatex(0%);
+        }
+    }
+
+    @keyframes horiz-reverse2 {
+        0% {
+            transform: translatex(0%);
+        }
+        100% {
+            transform: translatex(100%);
+        }
+    }
 }
 
 .clip-blob {
