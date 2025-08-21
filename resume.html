@@ -9,16 +9,16 @@
 </head>
 <body>
     <div class="bg-myblue-200 min-h-dvh">
-        <header class="bg-myblue-300 h-[15dvh] w-full grid md:justify-items-center-safe">
-            <nav class="h-full z-10 grid grid-cols-3 justify-items-center-safe text-center **:content-center">
+        <header id="home" class="bg-myblue-300 h-[15dvh] grid md:justify-items-center-safe">
+            <nav class="h-full grid grid-cols-3 justify-items-center-safe text-center **:content-center">
                 <button class="md:hidden" id="button">
                     <i id="icon" class="cursor-pointer fa-solid fa-bars text-3xl text-myblue-400"></i>
                 </button>
-                <div class="nav-links md:static absolute bg-myblue-300 w-full max-sm:py-3 top-[-100%] z-[-1] left-0 transition-all duration-600 ease-in-out">
+                <div class="nav-links md:static absolute bg-myblue-300 w-full max-sm:py-3 top-[-30%] left-0 transition-all duration-600 ease-in-out">
                     <ul class="*:md:px-5 text-2xl text-myblue-400 grid md:grid-cols-3 *:min-md:hover:text-myblue-100 *:min-md:hover:bg-myblue-400 *:transition-colors *:duration-300 *:md:rounded-md *:py-3">
-                        <li class="index.html"><a href="">Home</a></li>
-                        <li class="resume.html"><a href="">Resume</a></li>
-                        <li class="contatti.html"><a href="">Contatti</a></li>
+                        <li class=""><a href="index.html">Home</a></li>
+                        <li class=""><a href="resume.html">Resume</a></li>
+                        <li class=""><a href="contatti.html">Contatti</a></li>
                     </ul>
                 </div>
                 <!-- <div class="fixed left-0 bottom-0 z-40 w-full grid md:hidden">
@@ -58,20 +58,13 @@
         </header>
         <!--///INIZIO CONTENUTO/// -->
         <main class="h-full py-6">
-            <div class="fixed left-0 bottom-0 z-40 w-full grid md:hidden bg-myblue-400">
-                <ul class="grid grid-cols-4 [&>li>a]:text-myblue-200 text-center *:content-center">
-                    <li class=""><a href="#forma">Formazione</a></li>
-                    <li class=""><a href="#cert">Certificazioni</a></li>
-                    <li class=""><a href="#esplav">Esperienze Lavorative</a></li>
-                    <li class=""><a href="#alesp">Altre Esperienze</a></li>
-                </ul>
-            </div>
-            <div class="w-4/5 md:w-2/3 mx-auto grid grid-cols-2 justify-items-center-safe *:content-center-safe max-sm:gap-x-12 mb-6">
+            
+            <div class="w-4/5 md:w-2/3 mx-auto grid grid-cols-2 justify-items-center-safe *:content-center-safe max-sm:gap-x-12">
                 <h2 class="font-lexend font-light text-5xl md:text-9xl text-myblue-400 justify-self-end-safe">Gabriele<br />Sanetti</h2>
                 <img class="clip-blob w-80" src="assets/img/gabriele-sanetti.webp" alt="">
             </div>
 
-            <div class="w-cont mx-auto grid grid-cols-1 md:grid-cols-2 mt-24">
+            <div class="w-cont mx-auto grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-24">
                 <div class="grid auto-rows-auto md:h-max">
                     <div id="forma" class="grid grid-cols-2 justify-self-start gap-x-2 content-center-safe">
                         <h3 class="font-lex font-normal text-myblue-400 text-2xl md:text-3xl mb-5 md:mb-7 w-fit">Formazione</h3>
@@ -150,79 +143,97 @@
                     <!-- ///FINE FORMAZIONE/// -->
                     <div id="alesp" class="text-myblue-400 w-[90%] md:w-[75%] h-px bg-myblue-400 my-8"></div>
 
-                    <div class="grid grid-cols-2 justify-self-start gap-x-14 content-center-safe">
-                        <h3 class="font-lex font-normal text-myblue-400 text-2xl md:text-3xl mb-5 md:mb-7 w-fit text-nowrap">Altre Esperienze</h3>
+                    <div class="grid grid-cols-2 grid-flow-dense justify-self-start gap-x-14 content-center-safe">
+                        <h3 class="font-lex font-normal text-myblue-400 text-2xl md:text-3xl mb-3 md:mb-7 w-fit text-nowrap">Altre Esperienze</h3>
                         <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check text-myblue-400 w-7 md:w-9 pt-0.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
                     </div>
-                    <div class="grid grid-rows-2 md:grid-cols-2 grid-flow-col md:grid-flow-row [&>ul]:w-max [&>ul]:mr-8 snap-x md:snap-none overflow-x-scroll md:overflow-visible">
+                    <div class="grid grid-cols-4">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class=" col-start-4 md:hidden mb-2 icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-up text-myblue-400 w-6 md:w-8.5 rotate-90 animate-bounce"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 8l-4 4" /><path d="M12 8v8" /><path d="M16 12l-4 -4" /></svg>
+                    </div>
+                    <div class="w-11/12 grid grid-rows-2 md:grid-cols-2 grid-flow-col md:grid-flow-row [&>ul]:w-max [&>ul]:mr-8 snap-x md:snap-none overflow-x-scroll md:overflow-visible">
                         <ul class="mb-6">
+                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Fonlea Orchards</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Farmhand</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Stanthorpe, QLD, Australia</li>
+                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Ott 2023 - Gen 2024</li>
+                        </ul>
+                        <ul class="">
                             <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Top Cuts</li>
                             <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Labourer</li>
                             <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Currumbin Waters, QLD, Australia</li>
                             <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2023 - Ott 2023</li>
                         </ul>
-                        <ul class="">
+                        <ul class="mb-6">
                             <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Gurkhas Harvesting</li>
                             <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Mandarin Thinner</li>
                             <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Gayndah, QLD, Australia</li>
                             <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Gen 2023 - Mar 2023</li>
                         </ul>
-                        <ul class="mb-6">
-                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Top Cuts</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Labourer</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Currumbin Waters, QLD, Australia</li>
-                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2023 - Ott 2023</li>
-                        </ul>
                         <ul class="">
-                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Top Cuts</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Labourer</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Currumbin Waters, QLD, Australia</li>
-                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2023 - Ott 2023</li>
+                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Kool Packers Pty Ltd</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Vegetable Packer</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Gatton, QLD, Australia</li>
+                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Nov 2022 - Gen 2023</li>
                         </ul>
                         <ul class="mb-6">
-                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Top Cuts</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Labourer</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Currumbin Waters, QLD, Australia</li>
-                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2023 - Ott 2023</li>
+                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Fonlea Orchards</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Apple Picker, Pruner</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Stanthorpe, QLD, Australia</li>
+                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mar 2022 - Nov 2022</li>
                         </ul>
                         <ul class="">
-                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Top Cuts</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Labourer</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Currumbin Waters, QLD, Australia</li>
+                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Faro Story Pty Ltd</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Ginger Picker</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Wamuran, QLD, Australia</li>
+                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Dic 2021 - Gen 2022</li>
+                        </ul>
+                        <ul class="mb-6">
+                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Oz101 Pty Ltd</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Strawberry Picker</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Beerwah, QLD, Australia</li>
+                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Giu 2021 - Nov 2021</li>
+                        </ul>
+                        <ul class="">
+                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Pinata Farm</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Pineapple Box Boy</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Wamuran, QLD, Australia</li>
+                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2021 - Giu 2021</li>
+                        </ul>
+                        <ul class="mb-6">
+                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Sunny Ridge Farm</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Raspberry Picker</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Wamuran, QLD, Australia</li>
+                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Apr 2021 - Mag 2021</li>
+                        </ul>
+                        <ul class="">
+                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Meekak Korean BBQ Restaurant</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Kitchen Hand</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Caboolture, QLD, Australia</li>
                             <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2023 - Ott 2023</li>
                         </ul>
                         <ul class="mb-6">
-                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Top Cuts</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Labourer</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Currumbin Waters, QLD, Australia</li>
-                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2023 - Ott 2023</li>
+                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">A&A Juicy Berry</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Strawberry Picker</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Beerwah, QLD, Australia</li>
+                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2020 - Sett 2020</li>
                         </ul>
                         <ul class="">
-                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Top Cuts</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Labourer</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Currumbin Waters, QLD, Australia</li>
-                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2023 - Ott 2023</li>
-                        </ul>
-                        <ul class="mb-6">
-                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Top Cuts</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Labourer</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Currumbin Waters, QLD, Australia</li>
-                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2023 - Ott 2023</li>
-                        </ul>
-                        <ul class="">
-                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Top Cuts</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Labourer</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Currumbin Waters, QLD, Australia</li>
-                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2023 - Ott 2023</li>
-                        </ul>
-                        <ul class="">
-                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Top Cuts</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Labourer</li>
-                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Currumbin Waters, QLD, Australia</li>
-                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Mag 2023 - Ott 2023</li>
+                            <li class="font-lex font-light text-myblue-400 text-lg md:text-xl">Bonifazi Immobiliare</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-base md:text-lg">Bonifazi Immobiliare</li>
+                            <li class="font-lex font-extralight text-myblue-400 text-sm md:text-lg">Viterbo, Italia</li>
+                            <li class="font-lex font-extralight italic text-mybrown-300 text-sm md:text-base">Sett 2013 - Mar 2014</li>
                         </ul>
                     </div>
                 </div> 
+            </div>
+            <div class="fixed left-0 bottom-0 z-40 w-full grid md:hidden bg-myblue-400">
+                <ul class="grid grid-cols-5 [&>li>a]:text-myblue-200 items-center-safe justify-items-center-safe py-3">
+                    <li class=""><a href="#forma"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-book w-7"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg></a></li>
+                    <li class=""><a href="#cert"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check w-7"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg></a></li>
+                    <li class=""><a href="#home"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home w-10"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg></a></li>
+                    <li class=""><a href="#esplav"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-puzzle w-7"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7h3a1 1 0 0 0 1 -1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1a2 2 0 0 0 -4 0v1a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h1a2 2 0 0 0 0 -4h-1a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1" /></svg></a></li>
+                    <li class=""><a href="#alesp"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-folder-plus w-7"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" /><path d="M16 19h6" /><path d="M19 16v6" /></svg></a></li>
+                </ul>
             </div>
         </main>
         <!--///FINE CONTENUTO/// -->
@@ -260,7 +271,7 @@
                     </ul>
                 </div>
                 <div class="text-4xl max-sm:w-full mt-2.5">
-                    <ul class="grid grid-cols-2 max-sm:grid-cols-4 max-sm:text-center max-sm:items-center-safe md:gap-x-8 *:md:mb-7 *:md:last:mb-0"><!--*:mb-3 *:last:mb-0-->
+                    <ul class="justify-items-center-safe grid grid-cols-4 md:grid-cols-2 text-center md:gap-x-8 *:md:mb-7 *:md:last:mb-0"><!--*:mb-3 *:last:mb-0-->
                         <li class="max-sm:col-start-2 max-sm:col-end-3"><a class="" target="_blank" href="https://www.linkedin.com/in/gabrielesanetti/"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor"  class="w-11 icon icon-tabler icons-tabler-filled icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" /></svg></a></li>
                         <li class="max-sm:col-start-3 max-sm:col-end-4"><a class="" target="_blank" href="https://github.com/GabrieleSanetti"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="w-11 icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg></a></li>
                     </ul>
