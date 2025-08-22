@@ -9,6 +9,29 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>GS | Gabriele Sanetti | Web Developer</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "Db89jDNYE2ve9513w",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -136,21 +159,22 @@
         </header>
         <!--///INIZIO CONTENUTO/// -->
         <main class="h-full py-6">
-            <form
+            <form id="contact-form"
                 class="w-cont mx-auto grid auto-rows-auto grid-flow-row justify-center-safe
-                [&>label]:text-2xl [&>label]:text-myblue-400 [&>label]:mb-5 [&>input]:bg-myblue-100 [&>input]:mb-8 
+                [&>label]:text-2xl [&>label]:text-myblue-400 [&>label]:mb-5 [&>input]:mb-8 
                 [&>input]:h-12 [&>input]:w-max md:[&>input]:w-[450px] [&>input]:rounded-md [&>input]:text-2xl [&>input]:px-4 
-                [&>textarea]:bg-myblue-100 [&>textarea]:h-52 [&>textarea]:rounded-md [&>textarea]:resize-none [&>textarea]:text-2xl [&>textarea]:p-4"
-                action="">
-                <label for="fname">Nome:</label>
-                <input type="text" id="fname" name="fname">
-                <label for="femail">Email:</label>
-                <input type="email" id="femail" name="femail">
-                <label for="messaggio">Messaggio:</label>
-                <textarea name="messaggio" id="messaggio" cols="30"></textarea>
-                <button
+                [&>textarea]:bg-myblue-100 [&>textarea]:h-52 [&>textarea]:rounded-md [&>textarea]:resize-none [&>textarea]:text-2xl [&>textarea]:p-4">
+                <label>Nome</label>
+                <input class="bg-myblue-100 accent-mybrown-200" type="text" name="name" required>
+                <label>Email</label>
+                <input class="bg-myblue-100 accent-mybrown-200" type="email" name="email" required>
+                <label>Oggetto</label>
+                <input class="bg-myblue-100 accent-mybrown-200" type="text" name="title" required>
+                <label>Messaggio</label>
+                <textarea class="bg-myblue-100 accent-mybrown-200" name="message" required></textarea>
+                <input
                     class="w-full bg-myblue-400 rounded-lg mt-5 py-2 text-myblue-100 text-xl hover:bg-myblue-100 hover:text-myblue-400"
-                    type="submit">Invia</button>
+                    type="submit" value="Invia">
             </form>
         </main>
         <!--///FINE CONTENUTO/// -->
