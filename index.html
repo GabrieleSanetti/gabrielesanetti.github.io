@@ -149,9 +149,15 @@
                     src="assets/img/gabriele-sanetti.webp" alt="">
                 <div
                     class="px-6 font-lex font-extralight content-center-safe text-myblue-100 justify-self-center-safe mt-4 lg:px-0 lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:row-end-4">
-                    <h2 class="text-2xl lg:text-4xl mb-4">Ciao, mi chiamo Gabriele</h2>
-                    <h3 class="text-2xl lg:text-3xl mb-4">Amo ideare, creare e realizzare</h3>
-                    <h4 class="text-2xl lg:text-3xl">Sono appassionato di Comunicazione e Web Developing.</h4>
+                    <h2 class=" text-2xl lg:text-4xl mb-4">Ciao, mi chiamo Gabriele</h2>
+                    <h3 class="text-2xl lg:text-3xl mb-4">Amo <span class="font-medium">ideare</span>,
+                        <span class="font-semibold">creare</span> e
+                        <span class="font-bold">realizzare</span>
+                    </h3>
+                    <h4 class="[&>span]:font-medium text-2xl lg:text-3xl">Sono appassionato di
+                        <span>Comunicazione</span> e <span>Web
+                            Developing</span>.
+                    </h4>
                 </div>
                 <svg class="max-sm:hidden lg:col-start-6 lg:row-start-1 w-44 justify-self-end-safe"
                     viewBox="0 0 240 301" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,13 +167,14 @@
                 </svg>
             </div>
             <!-- /// FINE HERO /// -->
-            <!-- /// CHI SONO ///-->
+            <!-- /// BELOW HERO /// -->
             <div class="w-cont mx-auto mt-10">
+                <!-- /// CHI SONO ///-->
                 <div class="flex flex-row gap-1.5 text-myblue-400 mb-2">
                     <h2 class="w-fit text-3xl">Chi Sono</h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-6 lg:w-8 icon icon-tabler icons-tabler-outline icon-tabler-user">
+                        class="w-8 icon icon-tabler icons-tabler-outline icon-tabler-user">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
                         <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
@@ -175,7 +182,7 @@
                 </div>
 
                 <div
-                    class="flex flex-col lg:flex-row gap-x-20 text-2xl text-myblue-400 [&>div>p]:mb-7.5 [&>div>p]:font-extralight [&>div>p]:leading-9 [&>div>p]:break-keep [&>div>p>span]:font-normal">
+                    class="flex flex-col lg:flex-row gap-x-20 mb-10 text-2xl text-myblue-400 [&>div>p]:mb-7.5 [&>div>p]:font-extralight [&>div>p]:leading-9 [&>div>p]:break-keep [&>div>p>span]:font-normal">
                     <div class="lg:w-6/12">
                         <p>Mi chiamo <span>Gabriele</span> e abito in provincia di Viterbo.</p>
                         <p>Da adolescente ho iniziato a giocare con la <span>grafica</span>, realizzavo banner per
@@ -209,10 +216,352 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- /// FINE CHI SONO ///-->
+                <!-- /// INTERESSI /// -->
+                <div class="flex flex-row gap-1.5 text-myblue-400 mb-5">
+                    <h2 class="w-fit text-3xl">Interessi</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="w-8 icon icon-tabler icons-tabler-outline icon-tabler-folder">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2" />
+                    </svg>
+                </div>
+
+                <div>
+                    <ul
+                        class="mb-10 flex flex-row gap-x-15 [&>ul]:text-nowrap max-sm:overflow-x-auto [&>ul>li]:text-2xl [&>ul>li]:text-myblue-400 [&>ul>li]:pb-2 [&>ul>li]:last:pb-0">
+                        <ul>
+                            <li class="flex flex-row gap-x-2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-plane-tilt">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M14.5 6.5l3 -2.9a2.05 2.05 0 0 1 2.9 2.9l-2.9 3l2.5 7.5l-2.5 2.55l-3.5 -6.55l-3 3v3l-2 2l-1.5 -4.5l-4.5 -1.5l2 -2h3l3 -3l-6.5 -3.5l2.5 -2.5l7.5 2.5z" />
+                                </svg>
+                                Viaggio
+                            </li>
+                            <li class="flex flex-row gap-x-2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-users">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                                </svg>
+                                Networking
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="flex flex-row gap-x-2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-code">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 8l-4 4l4 4" />
+                                    <path d="M17 8l4 4l-4 4" />
+                                    <path d="M14 4l-4 16" />
+                                </svg>
+                                Programmazione
+                            </li>
+                            <li class="flex flex-row gap-x-2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                                    <path d="M13.5 6.5l4 4" />
+                                </svg>
+                                Scrittura
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="flex flex-row gap-x-2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-camera">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+                                    <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                </svg>
+                                Fotografia
+                            </li>
+                            <li class="flex flex-row gap-x-2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-user-up">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+                                    <path d="M19 22v-6" />
+                                    <path d="M22 19l-3 -3l-3 3" />
+                                </svg>
+                                Crescita Personale
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="flex flex-row gap-x-2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-language">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M4 5h7" />
+                                    <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+                                    <path d="M5 9c0 2.144 2.952 3.908 6.7 4" />
+                                    <path d="M12 20l4 -9l4 9" />
+                                    <path d="M19.1 18h-6.2" />
+                                </svg>
+                                Lingue
+                            </li>
+                            <li class="flex flex-row gap-x-2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-ball-tennis">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                    <path d="M6 5.3a9 9 0 0 1 0 13.4" />
+                                    <path d="M18 5.3a9 9 0 0 0 0 13.4" />
+                                </svg>
+                                Tennis
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <!-- /// FINE INTERESSI /// -->
+
+                <!-- /// SKILLS /// -->
+                <div class="flex flex-row gap-1.5 text-myblue-400 mb-5">
+                    <h2 class="w-fit text-3xl">Skills</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="w-8 icon icon-tabler icons-tabler-outline icon-tabler-star">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                </div>
+
+                <div>
+                    <ul
+                        class="flex flex-row gap-x-15 [&>ul]:text-nowrap overflow-x-auto [&>ul>li]:text-2xl [&>ul>li]:text-myblue-400 [&>ul>li]:pb-2 [&>ul>li]:last:pb-0">
+                        <ul class="[&>li]:flex [&>li]:flex-row [&>li]:gap-x-2.5">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-seo">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M7 8h-3a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-3" />
+                                    <path d="M14 16h-4v-8h4" />
+                                    <path d="M11 12h2" />
+                                    <path
+                                        d="M17 8m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+                                </svg>
+                                SEO</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-tower">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M5 3h1a1 1 0 0 1 1 1v2h3v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2h3v-2a1 1 0 0 1 1 -1h1a1 1 0 0 1 1 1v4.394a2 2 0 0 1 -.336 1.11l-1.328 1.992a2 2 0 0 0 -.336 1.11v7.394a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1v-7.394a2 2 0 0 0 -.336 -1.11l-1.328 -1.992a2 2 0 0 1 -.336 -1.11v-4.394a1 1 0 0 1 1 -1z" />
+                                    <path d="M10 21v-5a2 2 0 1 1 4 0v5" />
+                                </svg>
+                                Storytelling</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-brand-meta">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M12 10.174c1.766 -2.784 3.315 -4.174 4.648 -4.174c2 0 3.263 2.213 4 5.217c.704 2.869 .5 6.783 -2 6.783c-1.114 0 -2.648 -1.565 -4.148 -3.652a27.627 27.627 0 0 1 -2.5 -4.174z" />
+                                    <path
+                                        d="M12 10.174c-1.766 -2.784 -3.315 -4.174 -4.648 -4.174c-2 0 -3.263 2.213 -4 5.217c-.704 2.869 -.5 6.783 2 6.783c1.114 0 2.648 -1.565 4.148 -3.652c1 -1.391 1.833 -2.783 2.5 -4.174z" />
+                                </svg>
+                                Social Media</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-brand-adobe-premier">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M3 12c0 -4.243 0 -6.364 1.318 -7.682s3.44 -1.318 7.682 -1.318s6.364 0 7.682 1.318s1.318 3.44 1.318 7.682s0 6.364 -1.318 7.682s-3.44 1.318 -7.682 1.318s-6.364 0 -7.682 -1.318s-1.318 -3.44 -1.318 -7.682" />
+                                    <path
+                                        d="M7.263 15.79v-3.79m0 0v-3.248c0 -.335 .222 -.541 .542 -.541h1.353a1.895 1.895 0 1 1 0 3.789z" />
+                                    <path
+                                        d="M13.895 10.579v1.895m0 0v3.315m0 -3.315c.531 -.709 1.026 -1.592 1.894 -1.832q .22 -.062 .474 -.063" />
+                                </svg>
+                                Adobe Photoshop</li>
+                        </ul>
+                        <ul class="[&>li]:flex [&>li]:flex-row [&>li]:gap-x-2.5">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-html">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M13 16v-8l2 5l2 -5v8" />
+                                    <path d="M1 16v-8" />
+                                    <path d="M5 8v8" />
+                                    <path d="M1 12h4" />
+                                    <path d="M7 8h4" />
+                                    <path d="M9 8v8" />
+                                    <path d="M20 8v8h3" />
+                                </svg>
+                                HTML</li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-brand-css3">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                                    <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                                </svg>
+                                CSS
+                            </li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-brand-javascript">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                                    <path d="M7.5 8h3v8l-2 -1" />
+                                    <path
+                                        d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                                </svg>
+                                Javascript</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-brand-adobe-premier">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M3 12c0 -4.243 0 -6.364 1.318 -7.682s3.44 -1.318 7.682 -1.318s6.364 0 7.682 1.318s1.318 3.44 1.318 7.682s0 6.364 -1.318 7.682s-3.44 1.318 -7.682 1.318s-6.364 0 -7.682 -1.318s-1.318 -3.44 -1.318 -7.682" />
+                                    <path
+                                        d="M7.263 15.79v-3.79m0 0v-3.248c0 -.335 .222 -.541 .542 -.541h1.353a1.895 1.895 0 1 1 0 3.789z" />
+                                    <path
+                                        d="M13.895 10.579v1.895m0 0v3.315m0 -3.315c.531 -.709 1.026 -1.592 1.894 -1.832q .22 -.062 .474 -.063" />
+                                </svg>
+                                Adobe Premiere</li>
+                        </ul>
+                        <ul class="[&>li]:flex [&>li]:flex-row [&>li]:gap-x-2.5">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-brand-wordpress">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M9.5 9h3" />
+                                    <path d="M4 9h2.5" />
+                                    <path d="M11 9l3 11l4 -9" />
+                                    <path d="M5.5 9l3.5 11l3 -7" />
+                                    <path
+                                        d="M18 11c.177 -.528 1 -1.364 1 -2.5c0 -1.78 -.776 -2.5 -1.875 -2.5c-.898 0 -1.125 .812 -1.125 1.429c0 1.83 2 2.058 2 3.571z" />
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                </svg>
+                                Wordpress</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-brand-figma">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                    <path
+                                        d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z" />
+                                    <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" />
+                                </svg>
+                                Figma</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-ux-circle">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                    <path d="M7 10v2a2 2 0 1 0 4 0v-2" />
+                                    <path d="M14 10l3 4" />
+                                    <path d="M14 14l3 -4" />
+                                </svg>
+                                UX/UI</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="" height=""
+                                    class="w-7" fill="#2f4f6a">
+                                    <path
+                                        d="M 25 2 C 12.309288 2 2 12.309297 2 25 C 2 37.690703 12.309288 48 25 48 C 37.690712 48 48 37.690703 48 25 C 48 12.309297 37.690712 2 25 2 z M 25 4 C 36.609833 4 46 13.390175 46 25 C 46 36.609825 36.609833 46 25 46 C 13.390167 46 4 36.609825 4 25 C 4 13.390175 13.390167 4 25 4 z M 25 8 C 21.14 8 18 10.968234 18 14.615234 C 18 18.161234 21.284422 22.183625 24.357422 24.765625 C 24.543422 24.921625 24.771 24.998047 25 24.998047 C 25.229 24.998047 25.457578 24.920672 25.642578 24.763672 C 28.715578 22.181672 32 18.161234 32 14.615234 C 32 10.969234 28.859 8.001 25 8 z M 15.429688 25.007812 C 13.863723 25.048535 12.407391 25.347219 11.244141 26.011719 C 9.7551406 26.861719 8.6874219 28.265937 8.2324219 29.960938 C 7.7494219 31.760937 8.0261875 33.743391 8.9921875 35.400391 C 10.330187 37.696391 12.721094 38.998047 15.121094 38.998047 C 16.214094 38.998047 17.309594 38.728203 18.308594 38.158203 C 21.414594 36.381203 23.276375 31.519547 23.984375 27.560547 C 24.070375 27.081547 23.798844 26.608359 23.339844 26.443359 C 20.957344 25.587109 18.039629 24.939941 15.429688 25.007812 z M 34.572266 25.007812 C 31.962529 24.939941 29.045234 25.587109 26.662109 26.443359 C 26.203109 26.608359 25.929625 27.081547 26.015625 27.560547 C 26.722625 31.519547 28.585406 36.383203 31.691406 38.158203 C 32.689406 38.728203 33.784906 38.998047 34.878906 38.998047 C 37.277906 38.998047 39.668766 37.697391 41.009766 35.400391 C 41.975766 33.743391 42.251531 31.761937 41.769531 29.960938 C 41.315531 28.264938 40.244859 26.862719 38.755859 26.011719 C 37.592609 25.347219 36.138107 25.048535 34.572266 25.007812 z" />
+                                </svg>
+                                DaVinci Resolve</li>
+                        </ul>
+                        <ul class="[&>li]:flex [&>li]:flex-row [&>li]:gap-x-2.5">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-brand-adobe-illustrator">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M3 12c0 -4.243 0 -6.364 1.318 -7.682s3.44 -1.318 7.682 -1.318s6.364 0 7.682 1.318s1.318 3.44 1.318 7.682s0 6.364 -1.318 7.682s-3.44 1.318 -7.682 1.318s-6.364 0 -7.682 -1.318s-1.318 -3.44 -1.318 -7.682" />
+                                    <path
+                                        d="M12.947 15.79l-.82 -2.653m-4.864 2.652l.82 -2.652m0 0l.687 -2.218c.558 -1.806 .838 -2.708 1.335 -2.708c.498 0 .777 .902 1.336 2.708l.686 2.218m-4.043 0h4.043" />
+                                    <path d="M15.789 15.789v-4.736" />
+                                    <path d="M15.789 8.684v-.473" />
+                                </svg>
+                                Adobe Illustrator</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-brand-python">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" />
+                                    <path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" />
+                                    <path
+                                        d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4" />
+                                    <path d="M11 6l0 .01" />
+                                    <path d="M13 18l0 .01" />
+                                </svg>
+                                Python</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 50 50"
+                                    class="w-7 stroke-1 stroke-myblue-400" fill="#2F4F6A">
+                                    <path
+                                        d="M 34.902344 2 C 32.863281 2 31.097656 2.550781 29.875 3.09375 C 28.675781 2.691406 26.6875 2.003906 24.300781 2.5 C 22.910156 2.742188 21.632813 3.316406 20.460938 4.195313 C 18.53125 3.265625 16.515625 2.695313 14.402344 2.601563 C 13.101563 2.5 7.800781 3.101563 5.898438 5.898438 C 5.199219 7 4.5 8.398438 4.199219 10.097656 C 3.898438 11.597656 3.898438 13.300781 4.398438 16.800781 C 4.699219 19.199219 5.101563 20.800781 6 24.097656 C 6.101563 24.398438 6.601563 26 8.101563 30.402344 C 8.398438 31.199219 9 32.699219 10.199219 34.097656 C 11 35.097656 11.800781 35.699219 12.800781 35.699219 C 14.101563 35.699219 15 34.800781 15.800781 33.800781 C 15.859375 33.734375 15.921875 33.660156 15.980469 33.59375 C 15.90625 33.710938 15.839844 33.839844 15.800781 34 C 15.601563 35 16.800781 35.800781 17.800781 36.199219 C 18.601563 36.597656 19.5 36.699219 20.199219 36.699219 C 21.097656 36.699219 21.800781 36.5 22.199219 36.402344 C 22.542969 36.285156 23.285156 35.964844 24.078125 35.4375 C 24.113281 37.992188 24.136719 41.007813 24.199219 41.699219 C 24.5 44.300781 25.199219 46.097656 26.5 47.097656 C 27.5 47.898438 29.300781 48 29.402344 48 C 31.199219 48 34 46.800781 35.199219 44.902344 C 35.800781 44 36 43.199219 36.199219 42.097656 C 36.398438 41.5 36.597656 38 36.699219 37.300781 C 36.835938 36.195313 36.941406 35.105469 37.046875 34.046875 C 37.707031 34.21875 38.519531 34.402344 39.402344 34.402344 C 41 34.402344 43.101563 33.300781 43.5 33.097656 C 44.300781 32.5 45.898438 31.101563 45.199219 29.902344 C 44.800781 29.199219 44.199219 29.199219 42.699219 29.402344 C 42.699219 29.402344 40.300781 29.699219 40.097656 29.597656 C 39.953125 29.542969 39.730469 29.402344 39.480469 29.21875 C 40 28.414063 40.460938 27.617188 41 26.902344 C 42.199219 24.601563 42.902344 22.800781 43.402344 21.402344 C 44.300781 18.902344 44.800781 16.898438 45.097656 15.5 C 45.800781 12.5 46 11.101563 45.597656 9.5 C 44.800781 6.699219 41.898438 4.300781 40.699219 3.601563 C 39.898438 3.199219 37.902344 2 34.902344 2 Z M 34.902344 4 C 37.402344 4 39.101563 5 40 5.398438 C 41.101563 6 43.601563 8 43.800781 9.898438 C 43.902344 11 44 12.101563 43.300781 15 C 42.902344 16.398438 42.5 18.199219 41.597656 20.699219 C 41.097656 22.097656 40.5 23.800781 39.300781 25.902344 C 39.269531 25.953125 39.234375 26.007813 39.203125 26.0625 C 39.320313 25.640625 39.402344 25.300781 39.402344 25.300781 C 39.601563 24.300781 39.601563 23.5 39.5 22.300781 C 39.398438 21.699219 39.300781 20.199219 39.300781 19.597656 C 39.300781 19.300781 39.597656 16.199219 39.699219 15.097656 C 39.800781 13.300781 38.699219 11.097656 38.402344 10.699219 C 36.902344 8.398438 36.101563 7.101563 34.5 5.800781 C 34.101563 5.460938 33.417969 4.894531 32.488281 4.324219 C 33.222656 4.144531 34.035156 4 34.902344 4 Z M 26.066406 4.410156 C 27.371094 4.441406 28.476563 4.800781 29.300781 5.101563 C 31.402344 5.800781 32.699219 6.898438 33.300781 7.398438 C 34.601563 8.5 35.300781 9.601563 36.800781 11.902344 C 36.910156 12.121094 37.195313 12.585938 37.421875 13.234375 C 35.375 13.046875 34.015625 13.765625 33.199219 14.5 C 32 15.5 32.097656 17 32.199219 18.097656 C 32.199219 18.898438 32.402344 19.902344 33.902344 23.300781 C 34.5 24.800781 35.097656 26.398438 35.699219 27.5 C 36.011719 28.121094 36.394531 28.691406 36.804688 29.199219 C 36.566406 29.320313 36.324219 29.476563 36.097656 29.699219 C 35.5 30.398438 35.398438 31.101563 35.199219 32.402344 C 35 33.402344 34.800781 35.5 34.699219 37.199219 C 34.699219 37.898438 34.402344 41.300781 34.300781 41.800781 C 34 42.800781 33.898438 43.300781 33.5 43.902344 C 32.800781 45 30.601563 45.902344 29.300781 45.800781 C 28.902344 45.800781 28.300781 45.800781 27.800781 45.402344 C 26.699219 44.601563 26.300781 42.800781 26.199219 41.402344 C 26.097656 40.402344 26.199219 33.199219 26 31.597656 C 25.898438 31.199219 25.800781 30.199219 25 29.5 C 24.664063 29.21875 23.96875 29.074219 23.3125 28.976563 C 23.320313 28.640625 23.339844 28.304688 23.402344 28 C 23.5 27.398438 23.699219 27.097656 23.902344 26.597656 C 24 26.300781 24.199219 25.902344 24.402344 25.402344 C 25.300781 22.601563 25.097656 18.898438 24.597656 16.597656 C 24.5 16.398438 24.097656 14.800781 22.699219 13.902344 C 21.199219 13 19.597656 13.5 18.699219 13.800781 C 18.328125 13.902344 17.960938 14.0625 17.59375 14.25 C 17.65625 13.832031 17.710938 13.410156 17.800781 13 C 18.199219 11 18.601563 9.300781 19.902344 7.601563 C 21.300781 5.898438 22.898438 4.800781 24.699219 4.5 C 25.175781 4.425781 25.632813 4.398438 26.066406 4.410156 Z M 13.71875 4.585938 C 13.953125 4.582031 14.152344 4.585938 14.300781 4.601563 C 15.863281 4.683594 17.359375 5.050781 18.84375 5.675781 C 18.660156 5.878906 18.476563 6.082031 18.300781 6.300781 C 16.601563 8.300781 16.199219 10.398438 15.800781 12.5 C 15.300781 15 15.199219 17.597656 15.597656 20.199219 L 15.402344 22.097656 C 15.300781 23.097656 15.097656 25 16.199219 27 C 16.585938 27.664063 17.011719 28.226563 17.480469 28.707031 C 16.464844 30.050781 15.386719 31.320313 14.300781 32.5 C 13.699219 33.199219 13.199219 33.699219 12.800781 33.699219 C 12.699219 33.699219 12.300781 33.5 11.699219 32.800781 C 10.597656 31.601563 10.199219 30.300781 10 29.800781 C 8.800781 26.199219 8.101563 23.898438 8 23.597656 C 7.199219 20.398438 6.800781 18.800781 6.398438 16.5 C 5.898438 13.300781 5.898438 11.699219 6.199219 10.402344 C 6.5 9 7 7.898438 7.5 7.101563 C 8.726563 5.175781 12.09375 4.628906 13.71875 4.585938 Z M 36.664063 15.125 C 36.984375 15.125 37.332031 15.164063 37.699219 15.242188 C 37.6875 16.175781 37.300781 19.105469 37.300781 19.5 C 37.300781 20.300781 37.5 21.898438 37.5 22.5 C 37.601563 23.601563 37.601563 24.199219 37.5 25 C 37.5 25 37.351563 25.714844 37.199219 26.222656 C 36.734375 25.171875 36.21875 23.917969 35.597656 22.5 C 34.097656 19.101563 34 18.402344 34 17.902344 C 34 17.199219 34 16.300781 34.597656 15.902344 C 35.160156 15.402344 35.84375 15.132813 36.664063 15.125 Z M 21.140625 15.417969 C 21.339844 15.441406 21.523438 15.5 21.699219 15.597656 C 22.5 16 22.699219 17 22.699219 17 C 23.199219 19.199219 23.398438 22.5 22.597656 24.699219 C 22.5 25.097656 22.300781 25.398438 22.199219 25.699219 C 22 26.199219 21.800781 26.699219 21.597656 27.597656 C 21.546875 27.96875 21.523438 28.335938 21.511719 28.703125 C 20.820313 28.558594 20.167969 28.3125 19.699219 28 C 18.898438 27.601563 18.300781 26.898438 17.902344 26.097656 C 17.199219 24.597656 17.300781 23.199219 17.402344 22.402344 L 17.597656 20.097656 C 17.457031 18.972656 17.390625 17.84375 17.40625 16.722656 C 17.867188 16.328125 18.46875 15.925781 19.300781 15.699219 C 19.902344 15.550781 20.558594 15.34375 21.140625 15.417969 Z M 35.886719 16.089844 C 35.625 16.101563 35.347656 16.148438 35.199219 16.199219 C 34.800781 16.300781 34.699219 16.300781 34.597656 16.5 C 34.5 16.699219 34.800781 17 34.902344 17.199219 C 35 17.199219 35.300781 17.5 35.699219 17.402344 C 36 17.300781 36.199219 17.101563 36.300781 17 C 36.402344 16.898438 36.800781 16.398438 36.5 16.199219 C 36.398438 16.097656 36.148438 16.074219 35.886719 16.089844 Z M 20.914063 16.816406 C 20.804688 16.824219 20.699219 16.851563 20.597656 16.902344 C 20.5 16.902344 20.300781 17 20.199219 17.199219 C 20.097656 17.398438 20.199219 17.597656 20.300781 17.699219 C 20.5 18 20.800781 18.300781 21.300781 18.300781 C 21.402344 18.300781 21.800781 18.300781 22.097656 18 C 22.097656 18 22.402344 17.699219 22.402344 17.402344 C 22.300781 17.199219 22.101563 17.101563 21.800781 17 C 21.574219 16.925781 21.238281 16.792969 20.914063 16.816406 Z M 19.074219 29.902344 C 19.6875 30.230469 20.425781 30.496094 21.234375 30.679688 C 21.019531 31.109375 20.710938 31.464844 20.402344 31.699219 C 19.699219 32.199219 18.800781 32.5 17.902344 32.699219 C 17.699219 32.699219 17.601563 32.800781 17.402344 32.800781 C 16.917969 32.9375 16.449219 33.089844 16.128906 33.421875 C 17.109375 32.332031 18.09375 31.128906 19.074219 29.902344 Z M 38.355469 30.703125 C 38.792969 31.03125 39.222656 31.273438 39.597656 31.402344 C 40.199219 31.601563 40.699219 31.601563 42.5 31.402344 C 42.199219 31.699219 41.300781 32.199219 40 32.402344 C 39.164063 32.484375 38.125 32.285156 37.28125 32.042969 C 37.359375 31.476563 37.449219 31.152344 37.597656 31 C 37.652344 30.949219 37.984375 30.847656 38.355469 30.703125 Z M 23.296875 31.003906 C 23.503906 31.039063 23.667969 31.066406 23.699219 31.097656 C 23.898438 31.300781 24 31.800781 24 32 C 24.011719 32.171875 24.019531 32.605469 24.027344 32.90625 C 23.203125 33.871094 21.878906 34.40625 21.597656 34.5 C 21.199219 34.699219 20 34.898438 18.800781 34.5 C 19.800781 34.199219 20.800781 33.902344 21.597656 33.300781 C 22.296875 32.800781 22.898438 32.003906 23.296875 31.003906 Z">
+                                    </path>
+                                </svg>
+                                PostgreSQL</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-7 con icon-tabler icons-tabler-outline icon-tabler-brand-tailwind">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
+                                </svg>
+                                TailwindCSS</li>
+                        </ul>
+                    </ul>
+                </div>
+                <!-- /// FINE SKILLS /// -->
+
+                <!-- /// BOTTONE LEGGI RESUME /// -->
+                <a href="resume.html"
+                    class="mt-7 flex w-full bg-mybrown-200 rounded-md py-2 lg:py-5 pl-3 text-lg text-myblue-400 lg:text-4xl hover:bg-mybrown-300 lg:hover:text-myblue-200">
+                    Leggi il Mio Resume Completo
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="w-7 icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" />
+                    </svg>
+                </a>
+                <!-- /// FINE BOTTONE LEGGI RESUME /// -->
             </div>
-            <!-- /// FINE CHI SONO ///-->
-
-
 
 
 
