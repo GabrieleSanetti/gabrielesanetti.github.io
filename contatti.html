@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>GS | Gabriele Sanetti | Web Developer</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -159,11 +156,30 @@
         </header>
         <!--///INIZIO CONTENUTO/// -->
         <main class="h-full py-6">
+            <!--<form id="contact-form"
+                class="w-cont mx-auto grid auto-rows-auto grid-flow-row justify-center-safe
+                [&>label]:text-2xl [&>label]:text-myblue-400 [&>label]:mb-5 [&>input]:mb-8 
+                [&>input]:h-12 [&>input]:w-max md:[&>input]:w-[450px] [&>input]:rounded-md [&>input]:text-2xl [&>input]:px-4 
+                [&>textarea]:bg-myblue-100 [&>textarea]:h-52 [&>textarea]:rounded-md [&>textarea]:resize-none [&>textarea]:text-2xl [&>textarea]:p-4">
+                <label>Nome</label>
+                <input class="bg-myblue-100 accent-mybrown-200" type="text" name="name" required>
+                <label>Email</label>
+                <input class="bg-myblue-100 accent-mybrown-200" type="email" name="email" required>
+                <label>Oggetto</label>
+                <input class="bg-myblue-100 accent-mybrown-200" type="text" name="title" required>
+                <label>Messaggio</label>
+                <textarea class="bg-myblue-100 accent-mybrown-200" name="message" required></textarea>
+                <input
+                    class="w-full bg-myblue-400 rounded-lg mt-5 py-2 text-myblue-100 text-xl hover:bg-myblue-100 hover:text-myblue-400"
+                    type="submit" value="Invia">
+            </form>-->
             <form id="contact-form"
                 class="w-cont mx-auto grid auto-rows-auto grid-flow-row justify-center-safe
                 [&>label]:text-2xl [&>label]:text-myblue-400 [&>label]:mb-5 [&>input]:mb-8 
                 [&>input]:h-12 [&>input]:w-max md:[&>input]:w-[450px] [&>input]:rounded-md [&>input]:text-2xl [&>input]:px-4 
                 [&>textarea]:bg-myblue-100 [&>textarea]:h-52 [&>textarea]:rounded-md [&>textarea]:resize-none [&>textarea]:text-2xl [&>textarea]:p-4">
+                <!-- To simplify the tutorial, the value is static. -->
+                <input type="hidden" name="time" value="Mar 10 2025 08:46">
                 <label>Nome</label>
                 <input class="bg-myblue-100 accent-mybrown-200" type="text" name="name" required>
                 <label>Email</label>
