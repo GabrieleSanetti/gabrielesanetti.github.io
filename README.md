@@ -1,4 +1,4 @@
-# HTML & CSS Start2Impact Project
+# Progetto HTML & CSS Start2Impact
 
 🇮🇹 Progetto finale per il corso HTML & CSS del master Fullstack Developer.
 
@@ -8,9 +8,7 @@ Il progetto prevede la realizzazione del proprio sito portfolio con almeno tre p
 - Curriculum
 - Contatti
 
-Per la pagina contatti da implementare EmailJS per l'invio delle email direttamente dal sito.
-
-## Tech Used
+## Tecnologie Utilizzate
 
 - [x] [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
 - [x] [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)](#)
